@@ -1,0 +1,15 @@
+omegaconf
+transformers
+accelerate
+diffusers
+toml
+torch
+torchvision
+albumentations
+einops
+bitsandbytes
+voluptuous
+safetensors
+tensorboard
+xformers
+diffusers[torch]

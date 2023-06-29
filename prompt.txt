@@ -1,0 +1,1 @@
+a photo of serasakuoff woman, wearing white shirt, masterpiece, best quality, looking at viewer, simple background --n worst low quality --w 512 --h 512 --d 0 --l 7.5 --s 28
