@@ -1,1 +1,3 @@
 .ipynb*
+networks/__pycache__
+library/**/*.pyc
