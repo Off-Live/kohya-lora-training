@@ -51,6 +51,7 @@ from diffusers import (
     HeunDiscreteScheduler,
     KDPM2DiscreteScheduler,
     KDPM2AncestralDiscreteScheduler,
+    UniPCMultistepScheduler,
 )
 from huggingface_hub import hf_hub_download
 import albumentations as albu
@@ -2332,6 +2333,7 @@ def add_training_arguments(parser: argparse.ArgumentParser, support_dreambooth: 
             "k_euler_a",
             "k_dpm_2",
             "k_dpm_2_a",
+            "unipc",
         ],
         help=f"sampler (scheduler) type for sample images / サンプル出力時のサンプラー（スケジューラ）の種類",
     )
@@ -3527,6 +3529,8 @@ def sample_images(
         scheduler_cls = KDPM2DiscreteScheduler
     elif args.sample_sampler == "dpm_2_a" or args.sample_sampler == "k_dpm_2_a":
         scheduler_cls = KDPM2AncestralDiscreteScheduler
+    elif args.sample_sampler == "unipc":
+        scheduler_cls = UniPCMultistepScheduler
     else:
         scheduler_cls = DDIMScheduler
 
