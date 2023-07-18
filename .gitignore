@@ -18,3 +18,6 @@ logs/*
 
 output/*
 !output/.gitkeep
+
+configs/*
+!configs/.gitkeep
