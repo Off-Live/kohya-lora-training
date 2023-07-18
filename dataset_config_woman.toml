@@ -1,0 +1,17 @@
+[general]
+enable_bucket = true                        # Whether to use Aspect Ratio Bucketing
+
+[[datasets]]
+resolution = 512                            # Training resolution
+batch_size = 1                              # Batch size
+
+  [[datasets.subsets]]
+  image_dir = '/home/nairb/Documents/works/ai/kohya-lora-training/images'  
+  class_tokens = 'miadaki woman'
+  num_repeats = 30 
+
+  [[datasets.subsets]]
+  is_reg = true
+  image_dir = '/home/nairb/Documents/works/ai/kohya-lora-training/reg_images/woman'
+  class_tokens = 'woman'
+  num_repeats = 1

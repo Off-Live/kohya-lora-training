@@ -3,3 +3,18 @@ __pycache__
 networks/__pycache__
 library/**/*.pyc
 
+venv
+models/*
+!models/.gitkeep
+
+reg_images/*
+!reg_images/.gitkeep
+
+images/*
+!images/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+output/*
+!output/.gitkeep
