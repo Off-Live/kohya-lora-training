@@ -2,6 +2,7 @@
 __pycache__
 networks/__pycache__
 library/**/*.pyc
+venv*
 
 venv
 models/*
