@@ -1,5 +1,4 @@
 #pretrained_model_name_or_path = "runwayml/stable-diffusion-v1-5"
-#dataset_config = "/home/nairb/Documents/works/ai/kohya-lora-training/dataset_config.toml"
 output_dir = "output"
 logging_dir = "logs"
 log_tracker_name = "lora"
