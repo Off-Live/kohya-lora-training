@@ -1,5 +1,5 @@
-output_dir = "/root/output"
-logging_dir = "/root/logs"
+output_dir = "/root/kohya-lora-training/output"
+logging_dir = "/root/kohya-lora-training/logs"
 log_tracker_name = "lora"
 save_precision = "fp16"
 save_every_n_epochs = 1
